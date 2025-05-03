@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Gelişmiş</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📝 Yapılacaklar</h1>
+
+        <div class="top-bar">
+            <input type="text" id="todo-input" placeholder="Yeni görev girin...">
+            <select id="priority-select">
+                <option value="low">Düşük</option>
+                <option value="medium" selected>Orta</option>
+                <option value="high">Yüksek</option>
+            </select>
+            <button id="add-btn">Ekle</button>
+            <button id="toggle-theme">🌙</button>
+        </div>
+
+        <div class="filter-bar">
+            <select id="filter-select">
+                <option value="all">Tümü</option>
+                <option value="completed">Tamamlandı</option>
+                <option value="uncompleted">Tamamlanmadı</option>
+            </select>
+        </div>
+
+        <ul id="todo-list"></ul>
+
+        <div class="stats">
+            <span>Toplam: <span id="total-count">0</span></span>
+            <span>Tamamlanan: <span id="completed-count">0</span></span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
